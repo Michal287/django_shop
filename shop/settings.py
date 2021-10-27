@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'shop_apk.apps.ShopApkConfig',
+    'shop_app.apps.ShopApkConfig',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'shop_apk.context_processors.global_context',
+                'shop_app.context_processors.global_context',
             ],
         },
     },
@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'shop_apk/static/media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'shop_app/static/media/')
 
 # Redirects
 LOGIN_URL = "products_front_list"

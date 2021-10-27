@@ -1,6 +1,6 @@
-from shop_apk.functions import split_array
-from shop_apk.cart import Cart
-from shop_apk.models import Category, Image, Favourites
+from shop_app.functions import split_array
+from shop_app.cart import Cart
+from shop_app.models import Category, Image, Favourites
 
 
 def global_context(request):

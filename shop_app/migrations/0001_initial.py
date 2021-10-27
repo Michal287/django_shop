@@ -46,7 +46,7 @@ class Migration(migrations.Migration):
                 ('quantity', models.IntegerField()),
                 ('date_created', models.DateField(auto_now_add=True)),
                 ('slug', models.SlugField(max_length=200)),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shop_apk.Category')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shop_app.Category')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
@@ -64,7 +64,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('source', models.ImageField(blank=True, max_length=255, upload_to='pictures/%Y/%m/%d/')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shop_apk.Product')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shop_app.Product')),
             ],
         ),
     ]

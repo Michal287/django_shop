@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib.auth import views as auth_views
 
-from shop_apk.views import RegisterView, UserDetailView, ProductFrontListView, ProductAddView, ProductDeleteView, \
+from shop_app.views import RegisterView, UserDetailView, ProductFrontListView, ProductAddView, ProductDeleteView, \
     ProductDetailView, ProductsListUserView, cart_add, cart_detail, cart_remove, ProductListView, add_or_remove_favourite, \
     FavouriteListView, OpinionUserListView, OpinionUserAddView
 

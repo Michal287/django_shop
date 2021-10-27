@@ -2,7 +2,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.hashers import make_password
 from django.forms import ModelForm, inlineformset_factory
 from django import forms
-from shop_apk.models import Profile, Product, Image
+from shop_app.models import Profile, Product, Image
 from django.contrib.auth.models import User
 
 

@@ -1,6 +1,6 @@
 from decimal import Decimal
 from shop import settings
-from shop_apk.models import Product, Image
+from shop_app.models import Product, Image
 
 
 class Cart(object):

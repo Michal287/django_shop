@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('shop_apk', '0001_initial'),
+        ('shop_app', '0001_initial'),
     ]
 
     operations = [
@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             name='Favourites',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('product_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shop_apk.Product')),
+                ('product_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shop_app.Product')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),

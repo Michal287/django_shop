@@ -6,9 +6,9 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView
-from shop_apk.cart import Cart
-from shop_apk.models import Profile, Product, Image, Category, Favourites, Opinion
-from shop_apk.forms import RegisterForm, UserEditForm, ProfileEditForm
+from shop_app.cart import Cart
+from shop_app.models import Profile, Product, Image, Category, Favourites, Opinion
+from shop_app.forms import RegisterForm, UserEditForm, ProfileEditForm
 from django.urls import reverse
 from django.urls import reverse_lazy
 from django.forms import modelformset_factory

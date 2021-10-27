@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('shop_apk', '0002_favourites'),
+        ('shop_app', '0002_favourites'),
     ]
 
     operations = [
